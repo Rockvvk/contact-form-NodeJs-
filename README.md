@@ -6,3 +6,6 @@ user can send his credentials to admin gmail account
 
 requirements :  access to gmail from other source
 
+
+libraries used- nodemailer,express
+
