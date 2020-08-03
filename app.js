@@ -5,15 +5,6 @@ const nodemailer = require('nodemailer');
 
 const app = express();
 
-// View engine setup
-/*app.engine('handlebars', exphbs(
-    {
-        extname:"handlebars",
-        layoutsDir:"views/",
-        defaultLayout:"main-layout"
-    }
-
-));*/
 app.set("view engine","ejs");
 //app.use(bodyparser.urlencoded({extended:true}));
 
@@ -50,8 +41,8 @@ app.post('/send', (req, res) => {
     port: 587,
     secure: false, // true for 465, false for other ports
     auth: {
-        user: '007babailu@gmail.com', // generated ethereal user
-        pass: 'momdad9771'  // generated ethereal password
+        user: '//admin original gmail ID', // generated ethereal user
+        pass: '//gmail Password'  // generated ethereal password
     },
     tls:{
       rejectUnauthorized:false
@@ -60,8 +51,8 @@ app.post('/send', (req, res) => {
 
   // setup email data with unicode symbols
   let mailOptions = {
-      from: 'chintu@gmail.com', // sender address
-      to: '007babailu@gmail.com', // list of receivers
+      from: 'anything@gmail.com', // sender address
+      to: 'admin@gmail.com', // list of receivers
       subject: 'Node Contact Request', // Subject line
       text: 'Hello world?', // plain text body
       html: output // html body
